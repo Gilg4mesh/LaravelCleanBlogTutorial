@@ -14,9 +14,15 @@
 // Auth::routes();
 
 
-Route::view('/', 'index');
+Route::get('/', function () {
+    $posts = \DB::table('posts')->get();
+    return view('index', compact(['posts']));
+});
 Route::view('/about', 'about');
 Route::view('/post', 'post');
+Route::get('/post/{title}', function ($title) {
+    return $title;
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
