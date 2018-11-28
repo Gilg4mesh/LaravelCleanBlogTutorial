@@ -69,7 +69,7 @@
           <!-- Posts -->
           @foreach ($posts as $post)
             <div class="post-preview">
-              <a href="/post/{{ $post->title }}">
+              <a href="/post/{{ $post->slug }}">
                 <h2 class="post-title">
                   {{ $post->title }}
                 </h2>

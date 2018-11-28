@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 Route::view('/about', 'about');
 
-Route::get('/post/{title}', function ($title) {
-    $post = \DB::table('posts')->where('title', $title)->first();
+Route::get('/post/{slug}', function ($slug) {
+    $post = \DB::table('posts')->where('slug', $slug)->first();
     return view('post', compact(['post']));
 });
 
