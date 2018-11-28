@@ -13,7 +13,7 @@
 
 
 Route::get('/', function () {
-    $posts = \DB::table('posts')->get();
+    $posts = \DB::table('posts')->orderBy('created_at', 'desc')->paginate(3); // 3 items in one page
     return view('index', compact(['posts']));
 });
 
