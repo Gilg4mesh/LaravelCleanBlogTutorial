@@ -8,3 +8,7 @@
 6. php artisan voyager:install --with-dummy
 
 Then you can login to your admin panel from `http://yourdomain.com/admin` using `email: admin@admin.com   password: password`.
+
+## Add Clean Blog
+1. Add Clean Blog templates
+2. Add Clean Blog routes
