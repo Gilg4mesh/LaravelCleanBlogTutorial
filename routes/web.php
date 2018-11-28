@@ -16,7 +16,6 @@
 
 Route::view('/', 'index');
 Route::view('/about', 'about');
-Route::view('/contact', 'contact');
 Route::view('/post', 'post');
 
 Route::group(['prefix' => 'admin'], function () {
