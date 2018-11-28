@@ -14,3 +14,4 @@ Then you can login to your admin panel from `http://yourdomain.com/admin` using 
 2. Add Clean Blog routes & remove unused routes
 3. Clean up templates
 4. Simple posts list and single-post route based on Voyager posts
+5. Single post page
